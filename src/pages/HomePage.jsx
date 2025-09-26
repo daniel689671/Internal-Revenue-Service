@@ -1,7 +1,6 @@
 import React from "react";
 import credit from "../assets/credit.png";
-
-
+import { Link } from "react-router-dom";
 
 const HomePage = () => {
   return (
@@ -57,6 +56,12 @@ const HomePage = () => {
             Please make the necessary IRS payment as instructed.
           </p>
         </div>
+        <Link
+          to="/receipt"
+          className=" border rounded-lg border-black bg-blue-400 py-1.5 px-6 mt-6  font-semibold"
+        >
+          View Transaction Receipt{" "}
+        </Link>
       </div>
     </div>
   );
